@@ -3,6 +3,7 @@
 from .add_columns_to_table import add_columns_to_table, add_image_metrics_to_table
 from .common import check_package_version
 from .split import split_table
+from .yolo_export import export_to_yolo
 
 try:
     required_min_version = "2.11"
@@ -14,4 +15,4 @@ except Exception as e:
     ) from e
 
 
-__all__ = ["add_columns_to_table", "split_table", "add_image_metrics_to_table"]
+__all__ = ["add_columns_to_table", "split_table", "add_image_metrics_to_table", "export_to_yolo"]
